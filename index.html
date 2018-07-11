@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>Whacko Sunday Driver JS-StreetView by Riepupetteri. Powered by IBM Watson</title>
+	<style>
+		html,
+		body,
+		#map-canvas {
+			height: 85%;
+			margin: 5px;
+			padding: 5px;
+			background-color: #AAAAF4;
+		}
+
+		.button {
+			color: #FFFFFF;
+			background-color: #444444;
+			border-radius: 6px;
+		}
+
+		.button:hover {
+			background-color: #DDDDDD;
+			color: black;
+		}
+
+		.bodytext {
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.bodytext:hover {
+			color: #33BB33;
+		}
+	</style>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+</head>
+
+<body>
+	<div id="start-selection">
+		<p id="title" class="bodytext" style="font-size: 130%;"><b>Whacko Sunday Driver JS-StreetView by RiepuPetteri</b></p>
+		<p>
+			<img src="ai_competence_dev.jpg" style="float:right;width:270px;height:90px;">
+			<p id="instructions" class="bodytext" style="font-size: 80%">Select starting location (refresh browser to start over at any time)</p>
+		</p>
+		<button onClick="initialize('keha1')" id="myButton1" class="button">Keha I Leppavaara, Espoo, Finland</button>
+		<button onClick="initialize('bayvillage')" id="myButton2" class="button">Bay Village Circle, Santa Rosa, CA</button>
+		<button onClick="initialize('torikatu')" id="myButton3" class="button">Torikatu, Joensuu, Finland</button>
+		<button onClick="initialize('highway101')" id="myButton4" class="button">Highway 101, Santa Rosa, CA</button>
+		<button onClick="initialize('akadeemia')" id="myButton5" class="button">Akadeemia, Parnu, Estonia</button>
+		<button onClick="initialize('manawa')" id="myButton6" class="button">Manawa, Wisconsin</button>
+		<button onClick="initialize('ahtri')" id="myButton7" class="button">Ahtri, Tallinn, Estonia</button>
+		<button onClick="initialize('tarragona')" id="myButton8" class="button">Vitoria-Gasteiz, Euskadi</button>
+		<script src="src/index.js" type="text/javascript"></script>
+	</div><br><br>
+	<div id="map-canvas"></div>
+</body>
+
+</html>

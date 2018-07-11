@@ -1,2 +1,0 @@
-# RiepusVanillaTest
-Created with CodeSandbox
